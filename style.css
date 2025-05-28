@@ -1,0 +1,430 @@
+:root {
+    /* --color1: #1B4D3E;
+    --color2: #17B169;
+    --color3: #ACE1AF; */
+    /* --color1: #273E47;
+    --color2: #BD632F;
+    --color3: #8A4035; */
+    --color1: 0;
+    --color2: 0;
+    --color3: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+    box-sizing: border-box;
+
+    background-color: var(--color1);
+    color: var(--color2);  
+
+
+
+    font-family: 'Lexend', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.title {
+    font-size: 7vh;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--color2);
+    text-decoration: underline;
+    font-weight: 700;
+    text-shadow: 2.5px 2.75px var(--color3);
+    border: none;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.setTheme {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+    display: none;
+}
+
+
+
+
+
+
+.customOrsetThemeButtons {
+    padding: 1rem;
+}
+
+
+
+.presetThemesButton {
+    padding: 1rem;
+    margin-left: .75rem;
+    margin-right: .5rem;
+    font-size: 2vh;
+    border-radius: 10px;
+}
+
+.presetThemesButton:hover {
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+
+
+
+.customThemesButton {
+    padding: 1rem;
+    margin-left: .75rem;
+    margin-right: .5rem;
+    font-size: 2vh;
+    border-radius: 10px;
+}
+
+
+.customThemesButton:hover {
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+
+
+
+
+
+#themes {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+option{
+    font-size: 2vh;
+}
+
+option:hover {
+    cursor: pointer;
+}
+
+select {
+    font-size: 2vh;
+}
+
+
+.presetThemesDiv {
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+.sumbitPresetTheme {
+    font-size: 2vh;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.sumbitPresetTheme:hover {
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+
+
+
+.customThemesDiv {
+    padding: 1rem;
+    display: none;
+}
+
+
+input[type="color" i]::-webkit-color-swatch,
+input[type="color" i]::-moz-color-swatch {
+    border-radius: 50%;
+}
+
+
+input[type="color"]:hover {
+    cursor: pointer;
+}
+
+
+.submitCustomTheme {
+    font-size: 2vh;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.submitCustomTheme:hover {
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+
+
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2rem 3rem;
+    border: 3px dashed var(--color3);
+    border-radius: 10px;
+}
+
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    font-size: 2vh;
+    font-weight: bold;
+    border: 2px solid var(--color3);
+    background-color: var(--color2);
+    border-radius: 10px;
+}
+
+.folder-name {
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+.media {
+    padding: .75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2vh;
+    font-weight: bold;
+    border: 2px solid var(--color2);
+    border-radius: 10px;
+}
+
+
+.fileName {
+    float: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.fileName:hover {
+    text-decoration: line-through;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.downloadBtn {
+    float: right;
+    background-color: var(--color2);
+    color: var(--color3) !important;
+    border: 1px solid var(--color3);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+
+.downloadBtn:hover {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+.upload-btn-container {
+    margin-top: 2rem;  
+    border: 2px solid var(--color3);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5vh;
+}
+
+
+
+.file {
+    font-size: 1.5vw;
+    margin-right: 3rem;
+    font-weight: bold;
+}
+
+.file::file-selector-button {
+    background-color: var(--color2);
+    color: var(--color3) !important;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-weight: bold !important;
+}
+
+
+.file::file-selector-button:hover {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.upload-btn {
+    background-color: var(--color2);
+    color: var(--color3) !important;
+    border-radius: 10px;
+    padding: 1rem 2rem; 
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+
+
+.upload-btn:hover {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.upload-folder-container {
+    margin-top: 2rem;  
+    border: 2px solid var(--color3);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5vh;
+}
+
+
+
+.folder-name {
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: var(--color2);
+    color: white !important;
+    font-size: 1.7vh;
+}
+
+
+
+.folder-files {
+    font-size: 1.5vw;
+    margin-right: 3rem;
+    font-weight: bold;
+}
+
+.folder-files::file-selector-button {
+    background-color: var(--color2);
+    color: var(--color3) !important;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-weight: bold !important;
+}
+
+
+.folder-files::file-selector-button:hover {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.upload-btn {
+    background-color: var(--color2);
+    color: var(--color3) !important;
+    border-radius: 10px;
+    padding: 1rem 2rem; 
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+
+
+.upload-btn:hover {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+    font-weight: bolder;
+    cursor: pointer;
+}

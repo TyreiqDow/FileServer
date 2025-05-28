@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Server</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head> 
+
+
+
+
+
+
+
+
+    <body>
+        
+
+
+        <div class="container">
+
+
+
+
+
+
+
+
+            <button class="title" id="title" onclick="showORhideThemes()">Server</button>
+
+
+
+
+
+
+
+            <div class="setTheme" id="setTheme">
+
+                <div class="customOrsetThemeButtons">
+                    <button class="presetThemesButton" id="presetThemesButton" onclick="showPresetThemes()">Themes</button>
+                    <button class="customThemesButton" id="customThemesButton" onclick="showCustomThemes()">Custom Theme</button>
+                </div>
+
+
+
+                
+
+                <div class="presetThemesDiv" id="presetThemesDiv">
+                    <select id="themes" name="themes">
+                        <option value="Emerald Grove">Emerald Grove</option>
+                        <option value="Rustic Ember">Rustic Ember</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Reverse">Reverse</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="Rich Leather">Rich Leather</option>
+                        <option value="moonLight">Moon Light</option>
+                        <option value="Ocean">Ocean</option>
+                        <option value="Black Out">Black Out</option>
+                    </select>
+
+                    <br />
+
+                    <button class="sumbitPresetTheme" id="submitPresetTheme" onclick="setPresetTheme()">Set Theme</button>
+                </div>
+
+
+
+
+
+                <div class="customThemesDiv" id="customThemesDiv">
+                    <input type="color" name="Background Color Input" id="backgroundColorInput" class="backgroundColorInput">
+                    <label for="backgroundColorInput">Background Color</label>
+                    <br />
+                    <input type="color" name="Main Color Input" id="mainColorInput" class="mainColorInput">
+                    <label for="mainColorInput">Main Color</label>
+                    <br />
+                    <input type="color" name="Secondary Color input" id="secondaryColorInput" class="secondaryColorInput">
+                    <label for="secondaryColorInput">Second Color</label>
+                    <br />
+                    <button class="submitCustomTheme" id="submitCustomTheme" onclick="setCustomTheme()">Set Theme</button>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <br />
+
+
+
+
+            <div class="data" id="data">
+
+
+
+
+
+
+
+<!-- 
+                <div class="media">
+
+                    <p class="fileName">File Name</p>
+
+                    <button class="downloadBtn">Download</button>
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="folder">
+                    <p class="folder-name">Folder 1</p>
+
+                    <div class="media">
+
+                        <p class="fileName">File Name</p>
+    
+                        <button class="downloadBtn">Download</button>
+    
+                    </div>
+
+                    
+
+                    
+
+
+                </div> -->
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        
+
+
+
+            <br />
+
+
+
+
+
+
+
+
+
+
+            <div class="upload-btn-container">
+                <input type="file" name="file" class="file" id="file" multiple>
+                <button class="upload-btn" onclick="uploadMedia()">Upload</button>
+            </div>
+                
+            <div class="upload-folder-container">
+                <center><input type="text" name="folder-name" class="folder-name" id="folder-name" placeholder="Folder Name"></center>
+                <br />
+                <input type="file" name="folder-files" class="folder-files" id="folder-files" multiple>
+                <button class="upload-btn" onclick="uploadFolder()">Create Folder</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        
+
+
+
+    
+    
+    
+    
+        <script src="script.js"></script>
+    </body>
+
+
+</html>
